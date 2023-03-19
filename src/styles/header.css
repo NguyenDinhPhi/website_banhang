@@ -1,0 +1,132 @@
+.header {
+  width: 100%;
+  height: 210px;
+}
+
+.topbar {
+  width: 100%;
+  float: left;
+  background: #363636;
+  height: 40px;
+}
+.topbar span,
+.topbar a {
+  line-height: 40px;
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.logo {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+.header_logo {
+  width: 100%;
+  float: left;
+  height: 100px;
+  line-height: 100px;
+  padding: 0px !important;
+}
+.header hr {
+  margin: 0px;
+}
+.menu {
+  position: relative;
+  width: 100%;
+  float: left;
+  padding: 3px;
+  height: 60px;
+}
+.main_menu {
+  width: 100%;
+  float: left;
+  line-height: 60px;
+  padding: 0px !important;
+}
+.main_menu .menu_right .nav-item>a {
+  line-height: 35px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0px 25px 0px;
+  z-index: 5;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.red{
+  background: red;
+}
+.gray{
+  background: #8d8c8c8f;
+}
+.menu_hover .dropdown_menu {
+  position: absolute;
+  top: 100%;
+  left: 170px;
+  z-index: 1000;
+  display: none; 
+  min-width: 100px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  
+}
+.menu_hover .dropdown_menu li>a{
+  font-weight: 200;
+}
+.main_menu .menu_right .menu_hover:hover > .dropdown_menu {
+  display: block;
+  margin-top: 0px;
+  border-top: 0px;
+  border-radius: 0px;
+  width: 200px;
+  padding: 0px 0px 0px 0px;
+  background: #fff;
+  border: solid 1px #ebebeb;
+  z-index: 9;
+  
+}
+.main_menu .menu_right .menu_hover:hover > .dropdown_menu li {
+   padding: 5px 9px;
+    border-bottom: solid 1px #ebebeb;
+}
+.dropdown_menu li{
+  line-height: 20px;
+}
+.dropdown_menu li:hover  {
+  background-color: #0089ff;
+}
+.search_menu i,
+.cart_icon i{
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #363636;
+}
+.cart_icon {
+  position: relative;
+}
+.cart_icon a{
+  text-decoration: none;
+  color: #000;
+}
+.card_badge {
+  position: absolute;
+  right: -8px;
+  top: 11px;
+  background: #0089ff;
+  color: white;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

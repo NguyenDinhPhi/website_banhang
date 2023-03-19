@@ -1,0 +1,144 @@
+.bread_crumb {
+  background: #f5f5f5;
+  margin-bottom: 40px;
+  height: 54px;
+  width: 100%;
+}
+.breadcrumb {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-size: 14px;
+  padding: 15px 0px 15px !important;
+  border-radius: 0;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: transparent;
+}
+
+.title_list h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 0px;
+  margin: 0px;
+}
+.content_list {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+.content_list a {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333;
+  padding: 10px 0px;
+  border-bottom: solid 0px #ebebeb;
+  position: relative;
+}
+.title_page {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0px;
+  margin: 0px;
+  line-height: 41px;
+  
+}
+
+.item_product_main {
+}
+.product_box {
+  width: 100%;
+  position: relative;
+  
+}
+.product_thumbnail {
+  width: 100%;
+  float: left;
+  
+  
+}
+.sale_top {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  right: 0px;
+  z-index: 9999;
+  background: #ed1c24;
+  color: #fff;
+  padding: 10px 4px;
+  top: 0px;
+}
+.image_thumb {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.product_image {
+  transition: all 0.5s ease;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.second_image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+}
+.image_thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+.item_product_main:hover .product_thumbnail .image_thumb .second_image {
+  opacity: 1;
+}
+.product_info {
+  background: #fff;
+  padding: 0;
+  width: 100%;
+  float: left;
+  margin: 20px 0px 15px;
+  position: relative;
+}
+.product_name {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 5px;
+  line-height: 24px;
+}
+.product_name a {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #333;
+  text-decoration: none;
+}
+.product_item_price {
+  position: relative;
+}
+.product_price {
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  color: #363636;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.product_price_old {
+  font-size: 13px;
+  color: #acacac;
+  font-family: "Arial", sans-serif;
+  line-height: 24px;
+  font-weight: 300;
+  text-decoration: line-through;
+}

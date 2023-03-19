@@ -1,0 +1,72 @@
+
+.details_pro .title_product {
+    font-family: "Roboto",sans-serif;
+    color: #333;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0px 0px 15px;
+    line-height: normal;
+}
+.details_pro .group_status {
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 100%;
+    float: left;
+}
+.first_status {
+    color: #707070;
+    display: inline-block;
+    float: left;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+.first_status .a_name {
+    display: block;
+    padding: 0px 0px 0 0;
+    margin: 0px;
+    font-family: "Roboto",sans-serif;
+    color: #333;
+    font-weight: 400;
+    float: left;
+    background: #fff;
+    line-height: 15px;
+}
+.status_name {
+    font-size: 14px;
+    color: #0089ff;
+    line-height: 15px;
+    padding: 0px 0px 0px 5px;
+}
+.details_product .details_pro .price_box {
+    margin: 0px 0 0px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+}
+.product_price_dt {
+    font-family: "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #363636;
+}
+.price_box del {
+    font-family: "Arial", sans-serif;
+    color: #acacac;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+.product-summary {
+    padding: 15px 0px;
+    width: 100%;
+    float: left;
+}
+.product-summary .rte {
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+}

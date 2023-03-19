@@ -1,0 +1,40 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "MMXV BRUSH TEE - BLACK",
+      "price": 200.000,
+      "description": "Sử dụng vải canvas NE phối hợp cùng da lộn, Vintas Mister phiên bản mới gia tăng thêm độ thoải mái khi lên chân, đồng thời vẫn nguyên vẹn diện mạo cổ điển đầy cuốn hút. Lựa chọn không thể bỏ qua đối với mọi tín đồ theo đuổi nét đẹp mang dấu ấn thời gian.ou know best: era-echoing, '80s construction, bold details and nothin'-but-net style.",
+      "size": [40, 41, 42, 43],
+      "image_1": "a1_1.webp",
+      "image_2": "a1_2.webp"
+    },
+    {
+      "id": 2,
+      "name": "MMXV BRUSH TEE - BLACK",
+      "price": 500.000,
+      "description": "Sử dụng vải canvas NE phối hợp cùng da lộn, Vintas Mister phiên bản mới gia tăng thêm độ thoải mái khi lên chân, đồng thời vẫn nguyên vẹn diện mạo cổ điển đầy cuốn hút. Lựa chọn không thể bỏ qua đối với mọi tín đồ theo đuổi nét đẹp mang dấu ấn thời gian.ou know best: era-echoing, '80s construction, bold details and nothin'-but-net style.",
+      "size": [40, 41, 42, 43],
+      "image_1": "a2_1.webp",
+      "image_2": "a2_2.webp"
+    },
+    {
+      "id": 3,
+      "name": "MMXV BRUSH TEE - BLACK",
+      "price": 500.000,
+      "description": "Sử dụng vải canvas NE phối hợp cùng da lộn, Vintas Mister phiên bản mới gia tăng thêm độ thoải mái khi lên chân, đồng thời vẫn nguyên vẹn diện mạo cổ điển đầy cuốn hút. Lựa chọn không thể bỏ qua đối với mọi tín đồ theo đuổi nét đẹp mang dấu ấn thời gian.ou know best: era-echoing, '80s construction, bold details and nothin'-but-net style.",
+      "size": [40, 41, 42, 43],
+      "image_1": "a3_1.webp",
+      "image_2": "a3_2.webp"
+    },
+    {
+      "id": 4,
+      "name": "MMXV BRUSH TEE - BLACK",
+      "price": 500.000,
+      "description": "Sử dụng vải canvas NE phối hợp cùng da lộn, Vintas Mister phiên bản mới gia tăng thêm độ thoải mái khi lên chân, đồng thời vẫn nguyên vẹn diện mạo cổ điển đầy cuốn hút. Lựa chọn không thể bỏ qua đối với mọi tín đồ theo đuổi nét đẹp mang dấu ấn thời gian.ou know best: era-echoing, '80s construction, bold details and nothin'-but-net style.",
+      "size": [40, 41, 42, 43],
+      "image_1": "q1_1.webp",
+      "image_2": "q1_2.webp"
+    }
+  ]
+}
