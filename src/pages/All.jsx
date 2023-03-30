@@ -1,12 +1,15 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Col, Container, Nav, NavItem, NavLink, Row } from "reactstrap";
+import { Button, Col, Container, Nav, NavItem, NavLink, Row } from "reactstrap";
 import "../styles/all.css";
 import { getImagePath } from "../utillis/index";
+import { addProduct } from "../store/ProductSlice";
+
+import { useSelector, useDispatch } from "react-redux";
+
 const All = () => {
   const [productList, setProductList] = useState([]);
-  
-  
+  const dispatch = useDispatch();
   useEffect(() => {
     const callApi = async () => {
       const result = await axios.get("http://localhost:3000/product");
@@ -15,8 +18,12 @@ const All = () => {
     };
     callApi();
   }, []);
-  
-  
+
+  const onAddProduct = (product) => () => {
+    dispatch(addProduct(product));
+    // console.log();
+  };
+
   return (
     <div>
       <section>
@@ -89,7 +96,7 @@ const All = () => {
                 <hr className="dongke" />
                 <section className="products_view">
                   <Row>
-                    {productList.map(e => (
+                    {productList.map((e) => (
                       <Col lg="4" xs="4" sm="4" md="4">
                         <div className="item_product_main mt-4">
                           <div className="product_box">
@@ -98,22 +105,21 @@ const All = () => {
                               <a href="#" className="image_thumb">
                                 <div className="product_image">
                                   <img
-                                    src={getImagePath(e.image_1)} alt={e.name}
-                                    
+                                    src={getImagePath(e.image_1)}
+                                    alt={e.name}
                                   />
                                 </div>
                                 <div className="second_image">
                                   <img
-                                    src={getImagePath(e.image_2)} alt={e.name}
+                                    src={getImagePath(e.image_2)}
+                                    alt={e.name}
                                   />
                                 </div>
                               </a>
                             </div>
                             <div className="product_info">
                               <h3 className="product_name">
-                                <a href="#">
-                                  {e.name}
-                                </a>
+                                <a href="#">{e.name}</a>
                               </h3>
                               <div className="product_item_price">
                                 <span className="special_price">
@@ -128,11 +134,15 @@ const All = () => {
                                 </span>
                               </div>
                             </div>
+                            <div>
+                              <Button onClick={onAddProduct(e)} color="primary">
+                                Mua
+                              </Button>
+                            </div>
                           </div>
                         </div>
                       </Col>
                     ))}
-
                   </Row>
                 </section>
               </div>

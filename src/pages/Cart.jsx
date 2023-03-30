@@ -1,7 +1,14 @@
 import React from "react";
 import { Col, Container, NavItem, Row, NavLink, Table } from "reactstrap";
 import "../styles/cart.css";
+import { useSelector, useDispatch } from "react-redux";
+import { getImagePath } from "../utillis/index";
+
 const Cart = () => {
+ // const dispatch = useDispatch();
+  const listTaskStore = useSelector((state) => state.product.productList);
+
+  console.log("item", listTaskStore);
   return (
     <div>
       <section>
@@ -44,54 +51,55 @@ const Cart = () => {
                     <th style={{ width: 60 }}>Xoá</th>
                   </tr>
                 </thead>
-                <tbody className="cart_tbody">
-                  <tr>
-                    <td className="image">
-                      <NavLink href="#" className="product_img">
-                        <img
-                          src="https://bizweb.dktcdn.net/thumb/grande/100/318/614/products/polo-1-compressed.jpg?v=1677223413000"
-                          alt=""
-                        />
-                      </NavLink>
-                    </td>
-                    <td className="flex-column align-items-center ">
-                      <h3 className="product_name">
-                        <NavLink href="#" className="product_image">
-                          DOUBLE NECK WAFFLE POLO SHIRTS - BLACK
-                        </NavLink>
-                      </h3>
-                      <span className="variant_title">S</span>
-                    </td>
-                    <td>
-                      <span className="price">399.000₫</span>
-                    </td>
-                    <td>
-                      <div className="cart__item__info__quantity">
-                        <div className="product__info__item__quantity d-flex ">
-                          <div className="product__info__item__quantity__btn">
-                            -
+                {listTaskStore?.map((item) => {
+                  return (
+                    <tbody key={item?.id} className="cart_tbody">
+                      <tr>
+                        <td className="image">
+                          <NavLink href="#" className="product_img">
+                            <img src={getImagePath(item.image_1)} alt="" />
+                          </NavLink>
+                        </td>
+                        <td className="flex-column align-items-center ">
+                          <h3 className="product_name">
+                            <NavLink href="#" className="product_image">
+                              {item?.name}
+                            </NavLink>
+                          </h3>
+                          <span className="variant_title">S</span>
+                        </td>
+                        <td>
+                          <span className="price">{item?.price}.000₫</span>
+                        </td>
+                        <td>
+                          <div className="cart__item__info__quantity">
+                            <div className="product__info__item__quantity d-flex ">
+                              <div className="product__info__item__quantity__btn">
+                                -
+                              </div>
+                              <div className="product__info__item__quantity__input">
+                                1
+                              </div>
+                              <div className="product__info__item__quantity__btn">
+                                +
+                              </div>
+                            </div>
                           </div>
-                          <div className="product__info__item__quantity__input">
-                            1
-                          </div>
-                          <div className="product__info__item__quantity__btn">
-                            +
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <span className="price">399.000₫</span>
-                    </td>
-                    <td>
-                      <NavLink href="#" className="remove_itemx">
-                        <span>
-                          <i class="ri-delete-bin-line"></i>
-                        </span>
-                      </NavLink>
-                    </td>
-                  </tr>
-                </tbody>
+                        </td>
+                        <td>
+                          <span className="price">{item?.price}.000₫</span>
+                        </td>
+                        <td>
+                          <NavLink href="#" className="remove_itemx">
+                            <span>
+                              <i class="ri-delete-bin-line"></i>
+                            </span>
+                          </NavLink>
+                        </td>
+                      </tr>
+                    </tbody>
+                  );
+                })}
               </Table>
               <Row>
                 <Col lg="7">
